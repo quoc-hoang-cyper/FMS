@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleroom.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script&family=Darumadrop+One&family=Fredericka+the+Great&family=Permanent+Marker&family=Playfair+Display:wght@400;500;600&family=Rubik+Distressed&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <title>Virtual Fitting Room</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <a href="../index.html">
+                <div class="logo"><img src="../Pics/logo.png" alt=""></div>
+            </a>
+            <div class="navbar">
+                <div class="menu">
+                    <a href="../yourCollection/indexcollection.html">
+                        Your Collection
+                    </a>
+                    <a href="../useVRFR/indexuse.html">
+                        How to use VFR
+                    </a>
+                    <a href="../Virtual Fitting Room/indexroom.html">
+                        Virtual Fitting Room
+                    </a>
+                    <a href="../About Us/indexabout.html">
+                        About Us
+                    </a>
+                    <a id="xinchao" href="#">
+                        Sign in
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="moduleOne">
+            <div class="chooseStyle">
+                <table>
+                    <tr>
+                        <td colspan="2"
+                            style="text-align: center; font-size: x-large;font-family: 'Playfair Display', cursive;">
+                            CHOOSE YOUR STYLE</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button style="font-family: 'Shadows Into Light', cursive;">Unisex</button>
+                        </td>
+                        <td>
+                            <button style="font-family: 'Aboreto', cursive;">Minimalism</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button style="font-family: 'Fredericka the Great', cursive;">Vintage</button>
+                        </td>
+                        <td>
+                            <button style="font-family: 'Rubik Distressed', cursive;">Streetwear</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button style="font-family: 'Darumadrop One', cursive;">Grunge</button>
+                        </td>
+                        <td>
+                            <button style="font-family: 'Dancing Script', cursive;">Athleisure</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button style="font-family: 'Permanent Marker', cursive;">Preppy</button>
+                        </td>
+                        <td>
+                            <button style="font-family: 'Playfair Display', cursive;">Custom</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="model">
+                <div id="model1" class="bodyUser">
+                    <img src="../Pics/Thinmale.jpg" alt="Model">
+                </div>
+                <div id="model2" class="bodyUser">
+                    <img src="../Pics/Normalmale.jpg" alt="Model">
+                </div>
+                <div id="model3" class="bodyUser">
+                    <img src="../Pics/Fatmale.jpg" alt="Model">
+                </div>
+                <div id="model4" class="bodyUser">
+                    <img src="../Pics/Thinfemale.jpg" alt="Model">
+                </div>
+                <div id="model5" class="bodyUser">
+                    <img src="../Pics/Normalfemale.jpg" alt="Model">
+                </div>
+                <div id="model6" class="bodyUser">
+                    <img src="../Pics/Fatfemale.jpg" alt="Model">
+                </div>
+            </div>
+            <div class="cloth" style="overflow-y:auto;">
+                <table class="headerTable">
+                    <tr>
+                        <td colspan="2"
+                            style="text-align: center; font-size: x-large;font-family: 'Playfair Display', cursive;">
+                            CHOOSE PRODUCTS</td>
+                    </tr>
+                    <tr>
+                        <td><button class="productLinks" onclick="changeProduct(event, 'Shirt')">Shirt</button></td>
+                        <td><button class="productLinks" onclick="changeProduct(event, 'Pant')">Pant</button></td>
+                    </tr>
+                </table>
+                <table class="productTable">
+                    <tr>
+                        <td>
+                            <div id="Shirt" class="product">
+                                <table class="shirtTable">
+                                    <tr>
+                                        <td>
+                                            <div class="productCard">
+                                                <img src="../Pics/aoTrang1.png" alt="Pant" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>White Shirt</b>
+                                                    </h4>
+                                                    <p>A very beautiful White Shirt</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="productCard">
+                                                <img src="../Pics/aoTrang1.png" alt="Pant" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>White Shirt</b>
+                                                    </h4>
+                                                    <p>A very beautiful White Shirt</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="productCard">
+                                                <img src="../Pics/aoTrang1.png" alt="Pant" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>White Shirt</b>
+                                                    </h4>
+                                                    <p>A very beautiful White Shirt</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="productCard">
+                                                <img src="../Pics/aoTrang1.png" alt="Pant" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>White Shirt</b>
+                                                    </h4>
+                                                    <p>A very beautiful White Shirt</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="productCard">
+                                                <img src="../Pics/aoTrang1.png" alt="Pant" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>White Shirt</b>
+                                                    </h4>
+                                                    <p>A very beautiful White Shirt</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="productCard">
+                                                <img src="../Pics/aoTrang1.png" alt="Pant" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>White Shirt</b>
+                                                    </h4>
+                                                    <p>A very beautiful White Shirt</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="productCard">
+                                                <img src="../Pics/aoTrang1.png" alt="Pant" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>White Shirt</b>
+                                                    </h4>
+                                                    <p>A very beautiful White Shirt</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="productCard">
+                                                <img src="../Pics/aoTrang1.png" alt="Pant" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>White Shirt</b>
+                                                    </h4>
+                                                    <p>A very beautiful White Shirt</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="Pant" class="product">
+                                <table class="pantTable">
+                                    <tr>
+                                        <td>
+                                            <div class="productCard"><img src="../Pics/pantTest.png  " alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>White Shirt</b>
+                                                    </h4>
+                                                    <p>A very beautiful White Shirt</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="productCard"><img src="../Pics/pantTest.png  " alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>White Shirt</b>
+                                                    </h4>
+                                                    <p>A very beautiful White Shirt</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="productCard"><img src="../Pics/pantTest.png  " alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>White Shirt</b>
+                                                    </h4>
+                                                    <p>A very beautiful White Shirt</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="productCard"><img src="../Pics/pantTest.png  " alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>White Shirt</b>
+                                                    </h4>
+                                                    <p>A very beautiful White Shirt</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="productCard"><img src="../Pics/pantTest.png  " alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>White Shirt</b>
+                                                    </h4>
+                                                    <p>A very beautiful White Shirt</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="productCard"><img src="../Pics/pantTest.png  " alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>White Shirt</b>
+                                                    </h4>
+                                                    <p>A very beautiful White Shirt</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="productCard"><img src="../Pics/pantTest.png  " alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>White Shirt</b>
+                                                    </h4>
+                                                    <p>A very beautiful White Shirt</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="productCard"><img src="../Pics/pantTest.png  " alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>White Shirt</b>
+                                                    </h4>
+                                                    <p>A very beautiful White Shirt</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="moduleTwo">
+            <div class=" setUpbody">
+                <table class="bodyHeader">
+                    <tr>
+                        <td colspan="2" style="font-size: x-large;">CREATE YOUR BODY</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="genderLinks" onclick="changeTabBody(event, 'Male')">
+                                MALE
+                            </button>
+                        </td>
+                        <td>
+                            <button class="genderLinks" onclick="changeTabBody(event, 'Female')">
+                                FEMALE
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="font-size: x-large;">YOUR BODY TYPE</td>
+                    </tr>
+                </table>
+                <table class="bodyTable">
+                    <tr id="Male" class="bodyTab">
+                        <td><button class="bodyLinks" onclick="chooseBody(event, 'model1')"
+                                style="background-color: #fdfdfd;">
+                                <img src="../Pics/Thinmale.jpg" alt="" width="70px" height="170px">
+                            </button></td>
+                        <td><button class="bodyLinks" onclick="chooseBody(event, 'model2')"
+                                style="background-color: #fdfdfd;">
+                                <img src="../Pics/Normalmale.jpg" alt="" width="70px" height="170px">
+                            </button></td>
+                        <td><button class="bodyLinks" onclick="chooseBody(event, 'model3')"
+                                style="background-color: #fdfdfd;">
+                                <img src="../Pics/Fatmale.jpg" alt="" width="70px" height="170px">
+                            </button></td>
+                    </tr>
+                    <tr id="Female" class="bodyTab">
+                        <td><button class="bodyLinks" onclick="chooseBody(event, 'model4')"
+                                style="background-color: #aca6aa;">
+                                <img src="../Pics/Thinfemale.jpg" alt="" width="70px" height="170px">
+                            </button></td>
+                        <td><button class="bodyLinks" onclick="chooseBody(event, 'model5')"
+                                style="background-color: #aca6aa;">
+                                <img src="../Pics/Normalfemale.jpg" alt="" width="70px" height="170px">
+                            </button></td>
+                        <td><button class="bodyLinks" onclick="chooseBody(event, 'model6')"
+                                style="background-color: #aca6aa;">
+                                <img src="../Pics/Fatfemale.jpg" alt="" width="70px" height="170px">
+                            </button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="return">
+                <div>
+                    <button>RESET YOUR MODEL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+<script src="./mainroom.js"></script>
+
+</html>

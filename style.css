@@ -14,7 +14,7 @@
 .header {
     width: 100%;
     height: 70px;
-    background-color: rgb(224, 224, 224);
+    background-color: #000000;
 }
 
 .container {
@@ -26,6 +26,7 @@
 .navbar {
     display: flex;
 }
+
 .logo img {
     width: 100px;
     height: 70px;
@@ -44,18 +45,18 @@
 .menu a {
     text-decoration: none;
     padding: 10px 20px;
-    color: black;
+    color: white;
     border-radius: 10px;
 }
 
 .menu a:hover:not(.active) {
-    background-color: rgb(62, 61, 61);
-    color: rgb(255, 255, 255);
+    background-color:#fafafa;
+    color: black;
 }
 
 .menu a.active {
-    background-color: rgb(60, 58, 58);
-    color: rgb(255, 255, 255);
+    background-color: #fafafa;
+    color: black;
 }
 
 
@@ -64,84 +65,106 @@
     width: 100%;
     height: auto;
 }
+
 .panel1 {
     width: 100%;
     height: 750px;
     display: inline-flex;
+    background-color: #7cb4c3;
 }
+
 .content1 {
     height: 100%;
     width: 50%;
 }
-.content1 h1{
+
+.content1 h1 {
     text-align: center;
     margin-top: 35%;
+    color: whitesmoke;
 }
+
 .content1 p {
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
+    color: whitesmoke;
 }
+
 .pic1 {
     height: 100%;
     width: 50%;
-    background-image: url("./Pics/test1.png");
+    background-image: url("./Pics/fms.png");
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
 }
+
 .panel2 {
     width: 100%;
     height: 750px;
     display: inline-flex;
+    background-color: whitesmoke;
 }
+
 .content2 {
     height: 100%;
     width: 50%;
 }
-.content2 h1{
+
+.content2 h1 {
     text-align: center;
     margin-top: 35%;
 }
+
 .content2 p {
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
 }
+
 .pic2 {
-        height: 100%;
-        width: 50%;
-        background-image: url("./Pics/test2.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+    height: 100%;
+    width: 50%;
+    background-image: url("./Pics/1.2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 95%;
 }
+
 .panel3 {
     width: 100%;
     height: 750px;
     display: inline-flex;
+    background-color: #b5b5b5;
 }
+
 .content3 {
     height: 100%;
     width: 50%;
 }
-.content3 h1{
+
+.content3 h1 {
     text-align: center;
     margin-top: 35%;
+    color: white;
 }
+
 .content3 p {
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
+    color:white;
 }
+
 .pic3 {
     height: 100%;
     width: 50%;
-    background-image: url("./Pics/test3.png");
+    background-image: url("./Pics/3.3.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 /* footer */
 .footer {
     width: 100%;
@@ -150,11 +173,12 @@
     background-color: black;
     text-align: center;
     justify-content: space-around;
-    /* padding: 0 20px; */
 }
-.footer div h1{
+
+.footer div h1 {
     color: white;
 }
-.footer div p{
+
+.footer div p {
     color: white;
 }

@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* header */
+
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: #000000;
+}
+
+.container {
+    max-width: 1330px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.navbar {
+    display: flex;
+}
+
+.logo img {
+    width: 100px;
+    height: 70px;
+}
+
+.menu {
+    display: flex;
+    position: absolute;
+    top: 12px;
+    right: 35px;
+    align-items: center;
+    font-size: large;
+    font-family: 'Playfair Display', cursive;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.menu a:hover:not(.active) {
+    background-color: #fafafa;
+    color: black;
+}
+
+.menu a.active {
+    background-color: #fafafa;
+    color: black;
+}
+
+/* body */
+.body {
+    width: 100%;
+    height: 1150px;
+}
+
+.moduleOne {
+    width: 100%;
+    height: 70%;
+    display: inline-flex;
+    border-bottom: 5px ridge gray;
+}
+
+.moduleTwo {
+    width: 100%;
+    height: 30%;
+    display: inline-flex;
+}
+
+/* chooseStyle */
+
+.chooseStyle {
+    height: 75%;
+    width: 25%;
+}
+
+.chooseStyle table {
+    align-items: center;
+    margin-top: 20%;
+    width: 100%;
+    height: 100%;
+    border-spacing: 30px;
+}
+
+.chooseStyle table button {
+    border: solid;
+    padding: 10px 10px;
+    font-size: x-large;
+    border-radius: 15px;
+    color: black;
+}
+
+.chooseStyle table button:hover:not(.active) {
+    background-color: black;
+    color: white;
+}
+
+.chooseStyle table button.active {
+    background-color: white;
+    color: black;
+}
+
+
+/* setUpbody */
+.setUpbody {
+    height: 100%;
+    width: 75%;
+    border-radius: 20px;
+}
+
+.bodyHeader {
+    margin-left: 5%;
+    text-align: center;
+    width: 100%;
+    height: 25%;
+    border-spacing: 5px;
+}
+
+.bodyTable {
+    width: 100%;
+    height: auto;
+    margin-left: 23%;
+    border-spacing: 75px 5px;
+}
+
+.bodyUser {
+    display: none;
+}
+
+.bodyTab {
+    display: none;
+}
+
+
+.bodyHeader tr td button {
+    border: solid;
+    padding: 10px 10px;
+    border-radius: 15px;
+    font-size: large;
+    font-family: 'Playfair Display', cursive;
+}
+
+.bodyHeader button:hover:not(.active) {
+    background-color: black;
+    color: white;
+}
+
+.bodyHeader button.active {
+    background-color: black;
+    color: white;
+}
+
+.bodyTable tr td button {
+    border: solid;
+    padding: 15px 15px;
+    border-radius: 15px;
+}
+
+
+.bodyTable button:hover:not(.active) {
+    background-color: black;
+    color: white;
+}
+
+.bodyTable button.active {
+    background-color: black;
+    color: white;
+}
+
+
+/* model */
+
+.model {
+    width: 50%;
+    height: 100%;
+    padding: cover;
+    background-color: #fdfdfd;
+    border-left: 5px ridge gray;
+    border-right: 5px ridge gray;
+}
+
+
+
+.model div {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.model div img {
+    margin: auto;
+    width: 275px;
+    height: 700px;
+}
+
+/* cloth */
+
+.cloth {
+    width: 25%;
+    height: 100%;
+}
+
+.headerTable {
+    text-align: center;
+    margin-top: 20%;
+    width: 100%;
+    height: 25%;
+    border-spacing: 5px;
+}
+
+.productTable {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    border-spacing: 20px;
+}
+
+
+.headerTable tr td button {
+    border: solid;
+    padding: 10px 10px;
+    font-size: large;
+    border-radius: 15px;
+    color: black;
+    font-family: 'Playfair Display', cursive;
+}
+
+.headerTable button:hover:not(.active) {
+    background-color: black;
+    color: white;
+}
+
+.headerTable button.active {
+    background-color: white;
+    color: black;
+}
+
+.product {
+    display: none;
+}
+
+.productCard img {
+    width: 145px;
+    height: 145px;
+}
+
+.pantTable {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-spacing: 10px;
+}
+
+.shirtTable {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-spacing: 10px;
+}
+
+
+.productCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.productCard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.detail {
+    padding: 10px 10px;
+}
+
+.detail h4 b {
+    text-align: center;
+}
+
+.detail p {
+    text-align: center;
+}
+
+/* return */
+
+.return {
+    height: 100%;
+    width: 25%;
+}
+
+.return div button {
+    margin-top: 45%;
+    margin-left: 25%;
+    border: solid;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 15px;
+    color: black;
+    font-size: large;
+    font-family: 'Playfair Display', cursive;
+}
+
+
+.return div button:hover:not(.active) {
+    background-color: black;
+    color: white;
+}
+
+.return div button.active {
+    background-color: white;
+    color: black;
+}
