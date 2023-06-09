@@ -60,7 +60,7 @@
 /* body */
 .body {
     width: 100%;
-    height: 1150px;
+    height: 1330px;
 }
 
 .moduleOne {
@@ -74,6 +74,8 @@
     width: 100%;
     height: 30%;
     display: inline-flex;
+    position: relative;
+    z-index: 5;
 }
 
 /* chooseStyle */
@@ -113,31 +115,32 @@
 /* setUpbody */
 .setUpbody {
     height: 100%;
-    width: 75%;
+    width: 100%;
     border-radius: 20px;
 }
 
 .bodyHeader {
-    margin-left: 5%;
     text-align: center;
     width: 100%;
     height: 25%;
-    border-spacing: 5px;
 }
 
 .bodyTable {
+    margin: auto;
     width: 100%;
-    height: auto;
-    margin-left: 23%;
+    height: 50%;
     border-spacing: 75px 5px;
 }
+
 
 .bodyUser {
     display: none;
 }
 
 .bodyTab {
+    position: absolute;
     display: none;
+    margin-left: 25%;
 }
 
 
@@ -163,6 +166,8 @@
     border: solid;
     padding: 15px 15px;
     border-radius: 15px;
+    /* margin: auto; */
+    text-align: center;
 }
 
 
@@ -180,15 +185,48 @@
 /* model */
 
 .model {
+    margin-top: 75px;
     width: 50%;
-    height: 100%;
+    height: 75%;
     padding: cover;
     background-color: #fdfdfd;
     border-left: 5px ridge gray;
     border-right: 5px ridge gray;
+    position: relative;
+}
+
+div.trySuit {
+    position: absolute;
+    top: 7%;
+    left: 0px;
+    z-index: 2;
+}
+
+div.shirtShow {
+    position: absolute;
+    right: 0px;
+    display: none;
+    z-index: 4;
 }
 
 
+.shirtShow img {
+    width: 420px;
+    height: 400px;
+}
+
+div.pantShow {
+    position: absolute;
+    top: 35%;
+    z-index: 3;
+    display: none;
+    right: 0px;
+}
+
+.pantShow img {
+    width: 580px;
+    height: 400px;
+}
 
 .model div {
     width: 100%;
@@ -196,10 +234,12 @@
     text-align: center;
 }
 
-.model div img {
-    margin: auto;
-    width: 275px;
-    height: 700px;
+.bodyUser img {
+    margin-top: 10px;
+    width: 350px;
+    height: 750px;
+    position: relative;
+    z-index: 1;
 }
 
 /* cloth */
@@ -224,7 +264,6 @@
     border-spacing: 20px;
 }
 
-
 .headerTable tr td button {
     border: solid;
     padding: 10px 10px;
@@ -244,7 +283,7 @@
     color: black;
 }
 
-.product {
+.productStyle {
     display: none;
 }
 
@@ -253,19 +292,116 @@
     height: 145px;
 }
 
-.pantTable {
+.pantTable_Unisex {
     width: 100%;
     height: 100%;
     text-align: center;
     border-spacing: 10px;
 }
 
-.shirtTable {
+.shirtTable_Unisex {
     width: 100%;
     height: 100%;
     text-align: center;
     border-spacing: 10px;
 }
+
+
+.pantTable_Unisex {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-spacing: 10px;
+}
+
+.shirtTable_Streetwear {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-spacing: 10px;
+}
+
+
+.pantTable_Streetwear {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-spacing: 10px;
+}
+
+.shirtTable_Minimalism {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-spacing: 10px;
+}
+
+
+.pantTable_Minimalism {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-spacing: 10px;
+}
+
+.shirtTable_Athleisure {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-spacing: 10px;
+}
+
+
+.pantTable_Athleisure {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-spacing: 10px;
+}
+
+.shirtTable_Vintage {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-spacing: 10px;
+}
+
+
+.pantTable_Vintage {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-spacing: 10px;
+}
+
+.shirtTable_Grunge {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-spacing: 10px;
+}
+
+.pantTable_Grunge {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-spacing: 10px;
+}
+
+.shirtTable_Preppy {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-spacing: 10px;
+}
+
+.pantTable_Preppy {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-spacing: 10px;
+}
+
 
 
 .productCard {
@@ -295,6 +431,8 @@
 .return {
     height: 100%;
     width: 25%;
+    margin-left: 15%;
+    /* border-spacing: 0px 10px; */
 }
 
 .return div button {
@@ -318,4 +456,122 @@
 .return div button.active {
     background-color: white;
     color: black;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: #2f2f2f;
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer>* {
+    flex: 1 100%;
+}
+
+.footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+
+.footer__logo {
+    font-family: 'Playfair Display', cursive;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+}
+
+.footer__addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.nav__title {
+    font-weight: 400;
+    font-size: x-large;
+
+}
+
+.footer address {
+    font-style: normal;
+    color: #999;
+}
+
+.footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: rgb(33, 33, 33, 0.07);
+    border-radius: 100px;
+    color: #2f2f2f;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer li {
+    line-height: 2em;
+}
+
+.footer a {
+    font-family: 'Playfair Display', cursive;
+    font-size: large;
+    text-decoration: none;
+}
+
+.footer__nav {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer__nav>* {
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+
+.nav__ul a {
+    color: #999;
+}
+
+.nav__ul--extra {
+    column-count: 2;
+    column-gap: 1.25em;
+}
+
+
+@media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 40.375em) {
+    .footer__nav>* {
+        flex: 1;
+    }
+
+    .nav__item--extra {
+        flex-grow: 2;
+    }
+
+    .footer__addr {
+        flex: 1 0px;
+    }
+
+    .footer__nav {
+        flex: 2 0px;
+    }
 }

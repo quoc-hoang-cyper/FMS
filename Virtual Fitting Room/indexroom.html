@@ -23,16 +23,13 @@
                     <a href="../yourCollection/indexcollection.html">
                         Your Collection
                     </a>
-                    <a href="../useVRFR/indexuse.html">
-                        How to use VFR
-                    </a>
                     <a href="../Virtual Fitting Room/indexroom.html">
                         Virtual Fitting Room
                     </a>
                     <a href="../About Us/indexabout.html">
                         About Us
                     </a>
-                    <a id="xinchao" href="#">
+                    <a id="xinchao" href="../Sign up/indexaccount.html">
                         Sign in
                     </a>
                 </div>
@@ -50,39 +47,191 @@
                     </tr>
                     <tr>
                         <td>
-                            <button style="font-family: 'Shadows Into Light', cursive;">Unisex</button>
+                            <button
+                                onclick="chooseStyleShirt(event, 'Unisex_Shirt');chooseStylePant(event, 'Unisex_Pant') "
+                                style="font-family: 'Shadows Into Light', cursive;">Unisex</button>
                         </td>
                         <td>
-                            <button style="font-family: 'Aboreto', cursive;">Minimalism</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button style="font-family: 'Fredericka the Great', cursive;">Vintage</button>
-                        </td>
-                        <td>
-                            <button style="font-family: 'Rubik Distressed', cursive;">Streetwear</button>
+                            <button
+                                onclick="chooseStyleShirt(event, 'Minimalism_Shirt');chooseStylePant(event, 'Minimalism_Pant')"
+                                style="font-family: 'Aboreto', cursive;">Minimalism</button>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <button style="font-family: 'Darumadrop One', cursive;">Grunge</button>
+                            <button
+                                onclick="chooseStyleShirt(event, 'Vintage_Shirt');chooseStylePant(event, 'Vintage_Pant')"
+                                style="font-family: 'Fredericka the Great', cursive;">Vintage</button>
                         </td>
                         <td>
-                            <button style="font-family: 'Dancing Script', cursive;">Athleisure</button>
+                            <button
+                                onclick="chooseStyleShirt(event, 'Streetwear_Shirt');chooseStylePant(event, 'Streetwear_Pant')"
+                                style="font-family: 'Rubik Distressed', cursive;">Streetwear</button>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <button style="font-family: 'Permanent Marker', cursive;">Preppy</button>
+                            <button
+                                onclick="chooseStyleShirt(event, 'Grunge_Shirt');chooseStylePant(event, 'Grunge_Pant')"
+                                style="font-family: 'Darumadrop One', cursive;">Grunge</button>
+                        </td>
+                        <td>
+                            <button
+                                onclick="chooseStyleShirt(event, 'Athleisure_Shirt');chooseStylePant(event, 'Athleisure_Pant')"
+                                style="font-family: 'Dancing Script', cursive;">Athleisure</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button
+                                onclick="chooseStyleShirt(event, 'Preppy_Shirt');chooseStylePant(event, 'Preppy_Pant')"
+                                style="font-family: 'Permanent Marker', cursive;">Preppy</button>
                         </td>
                         <td>
                             <button style="font-family: 'Playfair Display', cursive;">Custom</button>
                         </td>
                     </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="return">
+                                <div>
+                                    <button onClick="window.location.reload();">RESET YOUR MODEL</button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
                 </table>
             </div>
             <div class="model">
+                <div class="trySuit">
+                    <div id="unisex_blacktee1" class="shirtShow">
+                        <img src="../Pics/unisex_blacktee1.png" alt="Shirt">
+                    </div>
+                    <div id="unisex_blacktee2" class="shirtShow">
+                        <img src="../Pics/unisex_blacktee2.png" alt="Shirt">
+                    </div>
+                    <div id="unisex_blacktee3" class="shirtShow">
+                        <img src="../Pics/unisex_blacktee3.png" alt="Shirt">
+                    </div>
+                    <div id="unisex_blacktee4" class="shirtShow">
+                        <img src="../Pics/unisex_blacktee4.png" alt="Shirt">
+                    </div>
+                    <div id="unisex_yellowtee" class="shirtShow">
+                        <img src="../Pics/unisex_yellowtee_cut.png" alt="Shirt">
+                    </div>
+                    <div id="unisex_bluetee" class="shirtShow">
+                        <img src="../Pics/unisex_bluetee_cut.png" alt="Shirt">
+                    </div>
+                    <div id="streetwear_whitepolo" class="shirtShow">
+                        <img src="../Pics/streetwear_whitepolo_cut.png" alt="Shirt">
+                    </div>
+                    <div id="streetwear_greenpolo" class="shirtShow">
+                        <img src="../Pics/streetwear_greenpolo_cut.png" alt="Shirt">
+                    </div>
+                    <div id="streetwear_blacktee" class="shirtShow">
+                        <img src="../Pics/streetwear_blacktee.png" alt="Shirt">
+                    </div>
+                    <div id="streetwear_blacktee1" class="shirtShow">
+                        <img src="../Pics/streetwear_blacktee1.png" alt="Shirt">
+                    </div>
+                    <div id="streetwear_blacktee2" class="shirtShow">
+                        <img src="../Pics/streetwear_blacktee2.png" alt="Shirt">
+                    </div>
+                    <div id="streetwear_blacktee3" class="shirtShow">
+                        <img src="../Pics/streetwear_blacktee3.png" alt="Shirt">
+                    </div>
+                    <div id="minimalism_beigetee" class="shirtShow">
+                        <img src="../Pics/minimalism_beigetee.png" alt="Shirt">
+                    </div>
+                    <div id="minimalism_blacktee" class="shirtShow">
+                        <img src="../Pics/minimalism_blacktee.png" alt="Shirt">
+                    </div>
+                    <div id="minimalism_blackpolo" class="shirtShow">
+                        <img src="../Pics/minimalism_blackpolo.png" alt="Shirt">
+                    </div>
+                    <div id="minimalism_bluepolo" class="shirtShow">
+                        <img src="../Pics/minimalism_bluepolo.png" alt="Shirt">
+                    </div>
+                    <div id="minimalism_bluetee" class="shirtShow">
+                        <img src="../Pics/minimalism_bluetee.png" alt="Shirt">
+                    </div>
+                    <div id="minimalism_bluetee1" class="shirtShow">
+                        <img src="../Pics/minimalism_bluetee1.png" alt="Shirt">
+                    </div>
+                    <div id="minimalism_greypolo" class="shirtShow">
+                        <img src="../Pics/minimalism_greypolo.png" alt="Shirt">
+                    </div>
+                    <div id="minimalism_olivepolo" class="shirtShow">
+                        <img src="../Pics/minimalism_olivepolo.png" alt="Shirt">
+                    </div>
+                    <div id="minimalism_whitepolo" class="shirtShow">
+                        <img src="../Pics/minimalism_whitepolo.png" alt="Shirt">
+                    </div>
+                    <div id="athleisure_bluetee" class="shirtShow">
+                        <img src="../Pics/athleisure_bluetee_cut.png" alt="Shirt">
+                    </div>
+                    <div id="athleisure_pinktee" class="shirtShow">
+                        <img src="../Pics/athleisure_pinktee_cut.png" alt="Shirt">
+                    </div>
+                    <div id="vintage_browngile" class="shirtShow">
+                        <img src="../Pics/vintage_browngile_cut.png" alt="Shirt">
+                    </div>
+                    <div id="vintage_brownshirt" class="shirtShow">
+                        <img src="../Pics/vintage_brownshirt_cut.png" alt="Shirt">
+                    </div>
+                    <div id="grunge_blackshirt" class="shirtShow">
+                        <img src="../Pics/grunge_blackshirt_cut.png" alt="Shirt">
+                    </div>
+                    <div id="grunge_whiteshirt" class="shirtShow">
+                        <img src="../Pics/grunge_whiteshirt.png" alt="Shirt">
+                    </div>
+                    <!-- pant -->
+                    <div id="unisex_blackshorts" class="pantShow">
+                        <img src="../Pics/unisex_blackshorts.png" alt="Pant">
+                    </div>
+                    <div id="unisex_blackshorts1" class="pantShow">
+                        <img src="../Pics/unisex_blackshorts1.png" alt="Pant">
+                    </div>
+                    <div id="unisex_blackshorts2" class="pantShow">
+                        <img src="../Pics/unisex_blackshorts2.png" alt="Pant">
+                    </div>
+                    <div id="unisex_blackshorts3" class="pantShow">
+                        <img src="../Pics/unisex_blackshorts3.png" alt="Pant">
+                    </div>
+                    <div id="pant1" class="pantShow">
+                        <img src="../Pics/pant1.png" alt="Pant">
+                    </div>
+                    <div id="pant2" class="pantShow">
+                        <img src="../Pics/pant2.png" alt="Pant">
+                    </div>
+                    <div id="pant3" class="pantShow">
+                        <img src="../Pics/pant3.png" alt="Pant">
+                    </div>
+                    <div id="pant4" class="pantShow">
+                        <img src="../Pics/pant4.png" alt="Pant">
+                    </div>
+                    <div id="minimalism_blackjeans" class="pantShow">
+                        <img src="../Pics/minimalism_blackjeans.png" alt="Pant">
+                    </div>
+                    <div id="minimalism_bluejeans" class="pantShow">
+                        <img src="../Pics/minimalism_bluejeans.png" alt="Pant">
+                    </div>
+                    <div id="minimalism_brightbluejeans" class="pantShow">
+                        <img src="../Pics/minimalism_brightbluejeans.png" alt="Pant">
+                    </div>
+                    <div id="minimalism_brightbluejeans1" class="pantShow">
+                        <img src="../Pics/minimalism_brightbluejeans1.png" alt="Pant">
+                    </div>
+                    <div id="vintage_brownpants" class="pantShow">
+                        <img src="../Pics/vintage_brownpants.png" alt="Pant">
+                    </div>
+                    <div id="athleisure_whitepants" class="pantShow">
+                        <img src="../Pics/athleisure_whitepants.png" alt="Pant">
+                    </div>
+                    <div id="atheleisure_greyshorts" class="pantShow">
+                        <img src="../Pics/atheleisure_greyshorts.png" alt="Pant">
+                    </div>
+                </div>
                 <div id="model1" class="bodyUser">
                     <img src="../Pics/Thinmale.jpg" alt="Model">
                 </div>
@@ -93,13 +242,13 @@
                     <img src="../Pics/Fatmale.jpg" alt="Model">
                 </div>
                 <div id="model4" class="bodyUser">
-                    <img src="../Pics/Thinfemale.jpg" alt="Model">
+                    <img src="../Pics/Thinfemale.png" alt="Model">
                 </div>
                 <div id="model5" class="bodyUser">
-                    <img src="../Pics/Normalfemale.jpg" alt="Model">
+                    <img src="../Pics/Normalefemale.png" alt="Model">
                 </div>
                 <div id="model6" class="bodyUser">
-                    <img src="../Pics/Fatfemale.jpg" alt="Model">
+                    <img src="../Pics/Fatfemale.png" alt="Model">
                 </div>
             </div>
             <div class="cloth" style="overflow-y:auto;">
@@ -117,192 +266,616 @@
                 <table class="productTable">
                     <tr>
                         <td>
-                            <div id="Shirt" class="product">
-                                <table class="shirtTable">
+                            <div id="Shirt" class="productStyle">
+                                <table id="Unisex_Shirt" class="shirtTable_Unisex styleShirtTable">
                                     <tr>
                                         <td>
-                                            <div class="productCard">
-                                                <img src="../Pics/aoTrang1.png" alt="Pant" ;>
+                                            <div onclick="chooseShirt(event, 'unisex_blacktee1')" class="productCard">
+                                                <img src="../Pics/unisex_blacktee1.png" alt="Shirt" ;>
                                                 <div class="detail">
                                                     <h4>
-                                                        <b>White Shirt</b>
+                                                        <b>Unisex Blacktee 1</b>
                                                     </h4>
-                                                    <p>A very beautiful White Shirt</p>
+                                                    <p>DEMO</p>
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="productCard">
-                                                <img src="../Pics/aoTrang1.png" alt="Pant" ;>
+                                            <div onclick="chooseShirt(event, 'unisex_blacktee2')" class="productCard">
+                                                <img src="../Pics/unisex_blacktee2.png" alt="Shirt" ;>
                                                 <div class="detail">
                                                     <h4>
-                                                        <b>White Shirt</b>
+                                                        <b>Unisex Blacktee 2</b>
                                                     </h4>
-                                                    <p>A very beautiful White Shirt</p>
+                                                    <p>DEMO</p>
                                                 </div>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <div class="productCard">
-                                                <img src="../Pics/aoTrang1.png" alt="Pant" ;>
+                                            <div onclick="chooseShirt(event, 'unisex_blacktee3')" class="productCard">
+                                                <img src="../Pics/unisex_blacktee3.png" alt="Shirt" ;>
                                                 <div class="detail">
                                                     <h4>
-                                                        <b>White Shirt</b>
+                                                        <b>Unisex Blacktee 3</b>
                                                     </h4>
-                                                    <p>A very beautiful White Shirt</p>
+                                                    <p>DEMO</p>
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="productCard">
-                                                <img src="../Pics/aoTrang1.png" alt="Pant" ;>
+                                            <div onclick="chooseShirt(event, 'unisex_blacktee4')" class="productCard">
+                                                <img src="../Pics/unisex_blacktee4.png" alt="Shirt" ;>
                                                 <div class="detail">
                                                     <h4>
-                                                        <b>White Shirt</b>
+                                                        <b>Unisex Blacktee 4</b>
                                                     </h4>
-                                                    <p>A very beautiful White Shirt</p>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="productCard">
-                                                <img src="../Pics/aoTrang1.png" alt="Pant" ;>
-                                                <div class="detail">
-                                                    <h4>
-                                                        <b>White Shirt</b>
-                                                    </h4>
-                                                    <p>A very beautiful White Shirt</p>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="productCard">
-                                                <img src="../Pics/aoTrang1.png" alt="Pant" ;>
-                                                <div class="detail">
-                                                    <h4>
-                                                        <b>White Shirt</b>
-                                                    </h4>
-                                                    <p>A very beautiful White Shirt</p>
+                                                    <p>DEMO</p>
                                                 </div>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <div class="productCard">
-                                                <img src="../Pics/aoTrang1.png" alt="Pant" ;>
+                                            <div onclick="chooseShirt(event, 'unisex_yellowtee')" class="productCard">
+                                                <img src="../Pics/unisex_yellowtee.png" alt="Shirt" ;>
                                                 <div class="detail">
                                                     <h4>
-                                                        <b>White Shirt</b>
+                                                        <b>Unisex Yellowtee</b>
                                                     </h4>
-                                                    <p>A very beautiful White Shirt</p>
+                                                    <p>DEMO</p>
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="productCard">
-                                                <img src="../Pics/aoTrang1.png" alt="Pant" ;>
+                                            <div onclick="chooseShirt(event, 'unisex_bluetee')" class="productCard">
+                                                <img src="../Pics/unisex_bluetee.png" alt="Shirt" ;>
                                                 <div class="detail">
                                                     <h4>
-                                                        <b>White Shirt</b>
+                                                        <b>Unisex Bluetee</b>
                                                     </h4>
-                                                    <p>A very beautiful White Shirt</p>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table id="Streetwear_Shirt" class="shirtTable_Streetwear styleShirtTable">
+                                    <tr>
+                                        <td>
+                                            <div onclick="chooseShirt(event, 'streetwear_greenpolo')"
+                                                class="productCard">
+                                                <img src="../Pics/streetwear_greenpolo.png" alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Streetwear Green polo</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div onclick="chooseShirt(event, 'streetwear_whitepolo')"
+                                                class="productCard">
+                                                <img src="../Pics/streetwear_whitepolo.png" alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Streetwear White polo</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div onclick="chooseShirt(event, 'streetwear_blacktee')"
+                                                class="productCard">
+                                                <img src="../Pics/streetwear_blacktee.png" alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Streetwear Black tee</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div onclick="chooseShirt(event, 'streetwear_blacktee1')"
+                                                class="productCard">
+                                                <img src="../Pics/streetwear_blacktee1.png" alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Streetwear Blacktee Blue Car </b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div onclick="chooseShirt(event, 'streetwear_blacktee2')"
+                                                class="productCard">
+                                                <img src="../Pics/streetwear_blacktee2.png" alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Streetwear Black tee Don't Stop</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div onclick="chooseShirt(event, 'streetwear_blacktee3')"
+                                                class="productCard">
+                                                <img src="../Pics/streetwear_blacktee3.png" alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Streetwear Blacktee Smoke </b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table id="Minimalism_Shirt" class="shirtTable_Minimalism styleShirtTable">
+                                    <tr>
+                                        <td>
+                                            <div onclick="chooseShirt(event, 'minimalism_beigetee')"
+                                                class="productCard">
+                                                <img src="../Pics/minimalism_beigetee.png" alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Minimalism beige tee</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div onclick="chooseShirt(event, 'minimalism_blackpolo')"
+                                                class="productCard">
+                                                <img src="../Pics/minimalism_blackpolo.png" alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Minimalism Black polo</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div onclick="chooseShirt(event, 'minimalism_blacktee')"
+                                                class="productCard">
+                                                <img src="../Pics/minimalism_blacktee.png" alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Minimalism Black tee</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div onclick="chooseShirt(event, 'minimalism_bluepolo')"
+                                                class="productCard">
+                                                <img src="../Pics/minimalism_bluepolo.png" alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Minimalism Blue polo</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div onclick="chooseShirt(event, 'minimalism_bluetee')" class="productCard">
+                                                <img src="../Pics/minimalism_bluetee.png" alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Minimalism Blue tee</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div onclick="chooseShirt(event, 'minimalism_bluetee1')"
+                                                class="productCard">
+                                                <img src="../Pics/minimalism_bluetee1.png" alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Minimalism Blue tee 1</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div onclick="chooseShirt(event, 'minimalism_greypolo')"
+                                                class="productCard">
+                                                <img src="../Pics/minimalism_greypolo.png" alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Minimalism Grey polo</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div onclick="chooseShirt(event, 'minimalism_olivepolo')"
+                                                class="productCard">
+                                                <img src="../Pics/minimalism_olivepolo.png" alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Minimalism Olive polo</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div onclick="chooseShirt(event, 'minimalism_whitepolo')"
+                                                class="productCard">
+                                                <img src="../Pics/minimalism_whitepolo.png" alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Minimalism White polo</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table id="Athleisure_Shirt" class="shirtTable_Athleisure styleShirtTable">
+                                    <tr>
+                                        <td>
+                                            <div onclick="chooseShirt(event, 'athleisure_bluetee')" class="productCard">
+                                                <img src="../Pics/athleisure_bluetee.png" alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Athleisure Blue tee</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div onclick="chooseShirt(event, 'athleisure_pinktee')" class="productCard">
+                                                <img src="../Pics/athleisure_pinktee.png" alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Athleisure Pink tee</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table id="Vintage_Shirt" class="shirtTable_Vintage styleShirtTable">
+                                    <tr>
+                                        <td>
+                                            <div onclick="chooseShirt(event, 'vintage_browngile')" class="productCard">
+                                                <img src="../Pics/vintage_browngile.png" alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Vintage Brown gile</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div onclick="chooseShirt(event, 'vintage_brownshirt')" class="productCard">
+                                                <img src="../Pics/vintage_brownshirt.png" alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Vintage Brown shirt</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table id="Grunge" class="shirtTable_Grunge styleShirtTable">
+                                    <tr>
+                                        <td>
+                                            <div onclick="chooseShirt(event, 'grunge_blackshirt')" class="productCard">
+                                                <img src="../Pics/grunge_blackshirt.png" alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Grunge Black shirt</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div onclick="chooseShirt(event, 'grunge_whiteshirt')" class="productCard">
+                                                <img src="../Pics/grunge_whiteshirt.png" alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Grunge White shirt</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table id="Preppy_Shirt" class="shirtTable_Preppy styleShirtTable">
+                                    <tr>
+                                        <td>
+                                            <div onclick="chooseShirt(event, 'Preppy')" class="productCard">
+                                                <img src="#" alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Preppy</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div onclick="chooseShirt(event, 'Preppy')" class="productCard">
+                                                <img src="#" alt="Shirt" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Preppy</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
                                                 </div>
                                             </div>
                                         </td>
                                     </tr>
                                 </table>
                             </div>
-                            <div id="Pant" class="product">
-                                <table class="pantTable">
+                            <!-- Pant -->
+                            <div id="Pant" class="productStyle">
+                                <table id="Unisex_Pant" class="pantTable_Unisex stylePantTable">
                                     <tr>
                                         <td>
-                                            <div class="productCard"><img src="../Pics/pantTest.png  " alt="Shirt" ;>
+                                            <div onclick="choosePant(event, 'unisex_blackshorts')" class="productCard">
+                                                <img src="../Pics/unisex_blackshorts.png" alt="Pant" ;>
                                                 <div class="detail">
                                                     <h4>
-                                                        <b>White Shirt</b>
+                                                        <b>Unisex Black shorts</b>
                                                     </h4>
-                                                    <p>A very beautiful White Shirt</p>
+                                                    <p>DEMO</p>
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="productCard"><img src="../Pics/pantTest.png  " alt="Shirt" ;>
+                                            <div onclick="choosePant(event, 'unisex_blackshorts1')" class="productCard">
+                                                <img src="../Pics/unisex_blackshorts1.png  " alt="Pant" ;>
                                                 <div class="detail">
                                                     <h4>
-                                                        <b>White Shirt</b>
+                                                        <b>Unisex Black shorts 1</b>
                                                     </h4>
-                                                    <p>A very beautiful White Shirt</p>
+                                                    <p>DEMO</p>
                                                 </div>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <div class="productCard"><img src="../Pics/pantTest.png  " alt="Shirt" ;>
+                                            <div onclick="choosePant(event, 'unisex_blackshorts2')" class="productCard">
+                                                <img src="../Pics/unisex_blackshorts2.png  " alt="Pant" ;>
                                                 <div class="detail">
                                                     <h4>
-                                                        <b>White Shirt</b>
+                                                        <b>Unisex Black shorts 2</b>
                                                     </h4>
-                                                    <p>A very beautiful White Shirt</p>
+                                                    <p>DEMO</p>
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="productCard"><img src="../Pics/pantTest.png  " alt="Shirt" ;>
+                                            <div onclick="choosePant(event, 'pant4')" class="productCard">
+                                                <img src="../Pics/unisex_blackshorts3.png  " alt="Pant" ;>
                                                 <div class="detail">
                                                     <h4>
-                                                        <b>White Shirt</b>
+                                                        <b>Unisex Black shorts 3</b>
                                                     </h4>
-                                                    <p>A very beautiful White Shirt</p>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table id="Streetwear_Pant" class="pantTable_Streetwear stylePantTable">
+                                    <tr>
+                                        <td>
+                                            <div onclick="choosePant(event, 'pant1')" class="productCard">
+                                                <img src="../Pics/pant1.png  " alt="Pant" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Streetwear Black Pant</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div onclick="choosePant(event, 'pant2')" class="productCard">
+                                                <img src="../Pics/pant2.png  " alt="Pant" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Streetwear Black Pant 2</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
                                                 </div>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <div class="productCard"><img src="../Pics/pantTest.png  " alt="Shirt" ;>
+                                            <div onclick="choosePant(event, 'pant3')" class="productCard">
+                                                <img src="../Pics/pant3.png  " alt="Pant" ;>
                                                 <div class="detail">
                                                     <h4>
-                                                        <b>White Shirt</b>
+                                                        <b>Streetwear Black Pant 3</b>
                                                     </h4>
-                                                    <p>A very beautiful White Shirt</p>
+                                                    <p>DEMO</p>
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="productCard"><img src="../Pics/pantTest.png  " alt="Shirt" ;>
+                                            <div onclick="choosePant(event, 'pant4')" class="productCard">
+                                                <img src="../Pics/pant4.png  " alt="Pant" ;>
                                                 <div class="detail">
                                                     <h4>
-                                                        <b>White Shirt</b>
+                                                        <b>Streetwear Black Pant 4</b>
                                                     </h4>
-                                                    <p>A very beautiful White Shirt</p>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table id="Minimalism_Pant" class="pantTable_Minimalism stylePantTable">
+                                    <tr>
+                                        <td>
+                                            <div onclick="choosePant(event, 'minimalism_blackjeans')"
+                                                class="productCard">
+                                                <img src="../Pics/minimalism_blackjeans.png  " alt="Pant" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Minimalism Black jeans</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div onclick="choosePant(event, 'minimalism_bluejeans')"
+                                                class="productCard">
+                                                <img src="../Pics/minimalism_bluejeans.png  " alt="Pant" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Minimalism Blue jeans</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
                                                 </div>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <div class="productCard"><img src="../Pics/pantTest.png  " alt="Shirt" ;>
+                                            <div onclick="choosePant(event, 'minimalism_brightbluejeans')"
+                                                class="productCard">
+                                                <img src="../Pics/minimalism_brightbluejeans.png  " alt="Pant" ;>
                                                 <div class="detail">
                                                     <h4>
-                                                        <b>White Shirt</b>
+                                                        <b>Minimalism Bright Blue jeans</b>
                                                     </h4>
-                                                    <p>A very beautiful White Shirt</p>
+                                                    <p>DEMO</p>
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="productCard"><img src="../Pics/pantTest.png  " alt="Shirt" ;>
+                                            <div onclick="choosePant(event, 'minimalism_brightbluejeans1')"
+                                                class="productCard">
+                                                <img src="../Pics/minimalism_brightbluejeans1.png  " alt="Pant" ;>
                                                 <div class="detail">
                                                     <h4>
-                                                        <b>White Shirt</b>
+                                                        <b>Minimalism Bright Blue jeans 1</b>
                                                     </h4>
-                                                    <p>A very beautiful White Shirt</p>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table id="Vintage_Pant" class="pantTable_Vintage stylePantTable">
+                                    <tr>
+                                        <td>
+                                            <div onclick="choosePant(event, 'vintage_brownpants')" class="productCard">
+                                                <img src="../Pics/vintage_brownpants.png  " alt="Pant" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Vintage Brown pants</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div onclick="choosePant(event, 'pant2')" class="productCard">
+                                                <img src="#" alt="Pant" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Vintage Pants</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table id="Athleisure_Pant" class="pantTable_Athleisure stylePantTable">
+                                    <tr>
+                                        <td>
+                                            <div onclick="choosePant(event, 'athleisure_whitepants')"
+                                                class="productCard">
+                                                <img src="../Pics/athleisure_whitepants.png" alt="Pant" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Athleisure White pants</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div onclick="choosePant(event, 'atheleisure_greyshorts')"
+                                                class="productCard">
+                                                <img src="../Pics/atheleisure_greyshorts.png  " alt="Pant" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Atheleisure Grey shorts</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table id="Preppy_Pant" class="pantTable_Preppy stylePantTable">
+                                    <tr>
+                                        <td>
+                                            <div onclick="choosePant(event, 'pant1')" class="productCard">
+                                                <img src="#" alt="Pant" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Preppy Pant</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div onclick="choosePant(event, 'pant2')" class="productCard">
+                                                <img src="#" alt="Pant" ;>
+                                                <div class="detail">
+                                                    <h4>
+                                                        <b>Preppy Pant 2</b>
+                                                    </h4>
+                                                    <p>DEMO</p>
                                                 </div>
                                             </div>
                                         </td>
@@ -353,28 +926,86 @@
                     </tr>
                     <tr id="Female" class="bodyTab">
                         <td><button class="bodyLinks" onclick="chooseBody(event, 'model4')"
-                                style="background-color: #aca6aa;">
-                                <img src="../Pics/Thinfemale.jpg" alt="" width="70px" height="170px">
+                                style="background-color: #fdfdfd;">
+                                <img src="../Pics/Thinfemale.png" alt="" width="70px" height="170px">
                             </button></td>
                         <td><button class="bodyLinks" onclick="chooseBody(event, 'model5')"
-                                style="background-color: #aca6aa;">
-                                <img src="../Pics/Normalfemale.jpg" alt="" width="70px" height="170px">
+                                style="background-color: #fdfdfd;">
+                                <img src="../Pics/Normalefemale.png" alt="" width="70px" height="170px">
                             </button></td>
                         <td><button class="bodyLinks" onclick="chooseBody(event, 'model6')"
-                                style="background-color: #aca6aa;">
-                                <img src="../Pics/Fatfemale.jpg" alt="" width="70px" height="170px">
+                                style="background-color: #fdfdfd;">
+                                <img src="../Pics/Fatfemale.png" alt="" width="70px" height="170px">
                             </button></td>
                     </tr>
                 </table>
             </div>
-            <div class="return">
-                <div>
-                    <button>RESET YOUR MODEL</button>
-                </div>
-            </div>
         </div>
     </div>
-    <div class="footer"></div>
+    <footer class="footer">
+        <div class="footer__addr">
+            <h1 class="footer__logo"><img src="../Pics/logo.png" alt=""></h1>
+            <address>
+                Base in SAI GON<br>
+                <a class="footer__btn" href="findmystyleofficial@gmail.com">Email Us</a>
+            </address>
+        </div>
+
+        <ul class="footer__nav">
+            <li class="nav__item">
+                <h2 class="nav__title">Fashion</h2>
+                <ul class="nav__ul">
+                    <li>
+                        <a href="../yourCollection/indexcollection.html">Style</a>
+                    </li>
+
+                    <li>
+                        <a href="../Virtual Fitting Room/indexroom.html">Virtual Fitting Room</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Store</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item">
+                <h2 class="nav__title">Technology</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">AI</a>
+                    </li>
+
+                    <li>
+                        <a href="../Virtual Fitting Room/indexroom.html">Virtual Fitting Room</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Sitemap</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item">
+                <h2 class="nav__title">Contact</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100093308054195&mibextid=ZbWKwL">Facebook</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Instagram</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Our Staff</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
 </body>
 <script src="./mainroom.js"></script>
 
